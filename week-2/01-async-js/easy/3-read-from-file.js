@@ -5,8 +5,9 @@
 // Try to do an expensive operation below the file read and see how it affects the output. 
 // Make the expensive operation more and more expensive and see how it affects the output. 
 
+// const { isUtf8 } = require('buffer');
 const fs = require('fs')
 
-fs.readFile('../02-nodejs/files/a.txt', function(err, data){
+fs.readFile('../../02-nodejs/files/a.txt','utf8', function(err, data){
     console.log(data);
-})
+});
